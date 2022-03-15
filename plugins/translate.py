@@ -11,7 +11,7 @@ from helper.list import list
 @Client.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
           insert(int(message.chat.id))
-          await message.reply_text(text =f"Hello **{message.from_user.first_name }** \n\n __I am simple Google Translater Bot \n I can translate any language to you selected language__",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(            [                [                    InlineKeyboardButton("Support💭" ,url="https://t.me/SLBotsOfficial") ],                 [InlineKeyboardButton("Subscribe 🧐", url="https://www.youtube.com/channel/UCoqH50psZdxpiSMIFZi6OFQ?view_as=subscriber"),InlineKeyboardButton("How To Use",url = "https://github.com/TharukRenuja/Google_Translater_V2") ]           ]        ) )
+          await message.reply_text(text =f"Hello **{message.from_user.first_name }** \n\n I am simple Google Translater Bot \n I can translate any language to you selected language",reply_to_message_id = message.message_id , parse_mode="markdown", reply_markup=InlineKeyboardMarkup(            [                [                    InlineKeyboardButton("❓ How to use" ,url="https://t.me/GoogleTranslaterBot_Help") ],                 [InlineKeyboardButton("🔄 Updates", url="https://t.me/The_Roboton"),InlineKeyboardButton("💬 Support",url = "https://t.me/MusicUpdates_chat") ]           ]        ) )
             
             
 @Client.on_message(filters.private & filters.text  )
@@ -43,7 +43,7 @@ async def echo(client, message):
 	InlineKeyboardButton("Dutch",callback_data = "nl"),
 	InlineKeyboardButton("Esperanto",callback_data = "eo"),	 
 	],
-	[InlineKeyboardButton(" Next --->",callback_data = "page2")
+	[InlineKeyboardButton(" Next 🔺",callback_data = "page2")
 	]
 	] )
 	try:
@@ -100,7 +100,7 @@ async def translate_text(bot,update):
 	InlineKeyboardButton("Dutch",callback_data = "nl"),
 	InlineKeyboardButton("Esperanto",callback_data = "eo"),	 
 	],
-	[InlineKeyboardButton(" Next --->",callback_data = "page2")
+	[InlineKeyboardButton(" Next 🔺",callback_data = "page2")
 	]
 	] )
 
@@ -130,7 +130,7 @@ async def translate_text(bot,update):
            InlineKeyboardButton("Irish",callback_data = "ga")
            ],
            [InlineKeyboardButton("<--- Back",callback_data = "page1"),
-           InlineKeyboardButton(" Next --->",callback_data = "page3"),
+           InlineKeyboardButton(" Next 🔺",callback_data = "page3"),
            ]
             ])
 		
@@ -160,7 +160,7 @@ async def translate_text(bot,update):
                 InlineKeyboardButton("Malay",callback_data ="ms")
                 ],
                 [InlineKeyboardButton("<--- Back",callback_data = "page2"),
-                InlineKeyboardButton(" Next --->",callback_data = "page4")
+                InlineKeyboardButton(" Next 🔺",callback_data = "page4")
                 ]
               
  
@@ -192,7 +192,7 @@ async def translate_text(bot,update):
           InlineKeyboardButton("Samoan",callback_data= "sm"),
           ],
           [InlineKeyboardButton("<--- Back",callback_data = "page3"),
-          InlineKeyboardButton("Next --->",callback_data = "page5")
+          InlineKeyboardButton("Next 🔺",callback_data = "page5")
           ]
           
  
@@ -226,7 +226,7 @@ async def translate_text(bot,update):
          InlineKeyboardButton("Telugu",callback_data = "te")
          ],
          [InlineKeyboardButton("<--- Back",callback_data = "page4"),
-         InlineKeyboardButton("Next --->",callback_data = "page6")
+         InlineKeyboardButton("Next 🔺",callback_data = "page6")
          ]  ])
 
 
